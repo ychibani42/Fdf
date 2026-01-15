@@ -27,8 +27,8 @@ FDF (Fil de Fer, meaning "wireframe" in French) is a graphics project that reads
 ### Core Algorithms
 
 1. **Isometric Projection**: 
-   - X-axis: `(x - y) * cos(0.6) * zoom + screen_width/2`
-   - Y-axis: `(x + y) * sin(0.6) * zoom - z * (zoom/scaling) + screen_height/2`
+   - X-axis: `(x - y) * cos(0.6) * zoom + SCREEN_WIDTH/2`
+   - Y-axis: `(x + y) * sin(0.6) * zoom - z * (zoom/scaling) + SCREEN_HEIGHT/2`
 
 2. **Line Drawing**: Bresenham's algorithm for rasterizing lines between grid points
 
