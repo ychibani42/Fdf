@@ -3,6 +3,9 @@
 Project a 2d map into the 3rd dimension based on values given by a map as argument.
 A 3D wireframe renderer that transforms 2D heightmap data into isometric 3D projections using the MiniLibX graphics library.
 
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ca833c4a-27e3-4f2b-87f1-8929b993425a" />
+
+
 ## Description
 
 FDF (Fil de Fer, meaning "wireframe" in French) is a graphics project that reads heightmap data from `.fdf` files and renders them as 3D wireframe models in isometric projection. The program visualizes terrain or elevation data by connecting points in a grid, where each value represents the z-coordinate (height) of a point in 3D space.
@@ -11,7 +14,7 @@ FDF (Fil de Fer, meaning "wireframe" in French) is a graphics project that reads
 
 - **Isometric Projection**: Transforms 3D coordinates into 2D isometric view
 - **Dynamic Rendering**: Uses Bresenham's line algorithm for efficient line drawing
-- **Color Mapping**: Heights are colored differently (elevated points in red, ground level in white)
+- **Color Mapping**: Heights are colored differently (elevated points in orange, ground level in white)
 - **Interactive Window**: MLX-based graphical window with keyboard controls
 - **Automatic Scaling**: Adapts zoom and scaling based on map dimensions
 - **Error Handling**: Validates input files and handles parsing errors
@@ -34,7 +37,7 @@ FDF (Fil de Fer, meaning "wireframe" in French) is a graphics project that reads
 2. **Line Drawing**: Bresenham's algorithm for rasterizing lines between grid points
 
 3. **Color Assignment**:
-   - Elevated points (z > 0): Red (`0xFFFF0000`)
+   - Elevated points (z > 0): orange (`0xFFFF0000`)
    - Ground level (z = 0): White (`0xFFFFFFFF`)
 
 ## Installation
